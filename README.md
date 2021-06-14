@@ -16,8 +16,21 @@ Monero currently uses an anonset size of 11 for each transaction, known as *mixi
 
 MimbleWimble Protocol coins have anonsets which are shared across an entire block, which can be considered strictly better than CryptoNote Protocol but not as beneficial as network-wide anonsets of Zcash Protocol. There is research that shows a malicious node can listen to network traffic and further degrate the anonset to individual transactions inside the block, but this data does not appear on a block explorer.
 
-In Zcash Protocol, via Zero Knowledge mathematics knowns as zk-SNARKs, each "shielded transaction" is protected by the entire networks anonset.
+In Zcash Protocol, via Zero Knowledge mathematics knowns as zk-SNARKs, each "shielded transaction" is protected by the entire network-wide anonset.
 
 # Zcash Protocol Anonsets
 
 Since Zcash Protocol has the largest anonsets which give the most privacy, and since Hush is based on Zcash Protocol, we will focus on this "flavor" of anonsets.
+
+## Definitions
+
+We will need to define a few more terms to precisely talk about measuring and studying the anonset, AKA shielded pool size, in Zcash Protocol coins.
+
+### Input
+### Output
+### Coinbase
+### Shielded Input
+### Shielded Output
+### Transparent Input
+### Transparent Output
+
