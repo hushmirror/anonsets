@@ -94,6 +94,8 @@ Her shielded transaction will have 11 shielded inputs. On Zcash and Pirate coins
 
 If Alice used Hush, Sietch would increase the number of outputs to 8, and therefore the anonset would only *decrease* by 3. Sietch helps to keep the anonset larger. In general, when Alice only needs to spent 1 input, Sietch *increases* the anonset by 7 or 8, depending on if there is change.
 
+All transactions with more than two inputs reduce the anonset of Zcash (ZEC), Pirate (ARRR) and all other Zcash Protocol coins, except Hush. Only transactions with at least 8 inputs reduce the size of the anonset, which happen more rarely.
+
 ### What makes anonsets go up? HushChat
 
 Since HushChat memos are amount=0 by default, that means they have 1 shielded input and 8 shielded outputs on average, which means each HushChat memo increases the anonset size by 7. The use of HushChat directly increases the anonset of HUSH. Every HushChat memo helps create a larger anonset to protect all users.
