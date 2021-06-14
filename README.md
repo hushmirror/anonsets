@@ -88,6 +88,12 @@ Since anonset sizes can go up and down at every block, just because one coin has
 
 Whenever there are more shielded inputs than shielded outputs, the anonset goes down in that transaction. One can add up all the transactions of a block and also determine if a certian block height *increases* or *decreases* the anonset size.
 
-Let's say Alice wants to send Bob 1 HUSH but all she has are 101 shielded outputs of amount 0.01, which add up to 1.01 HUSH. That gives her enough to send 1 HUSH to Bob and to pay the transaction fee of 0.0001 HUSH.
+Let's say Alice wants to send Bob 1 HUSH and she has 11 shielded outputs of amount 0.01, which add up to 1.1 HUSH. That gives her enough to send 1 HUSH to Bob and to pay the transaction fee of 0.0001 HUSH.
 
-Her shielded transaction will have 101 shielded inputs. On Zcash and Pirate coins, the transaction will have two outputs, and therefore *decrease* the anonset by 99. This can often happen when miners get many small regular payments from a mining pool, then they spend the funds.
+Her shielded transaction will have 11 shielded inputs. On Zcash and Pirate coins, the transaction will have two outputs, and therefore *decrease* the anonset by 9. This can often happen when miners get many small regular payments from a mining pool, then they spend the funds.
+
+If Alice used Hush, Sietch would increase the number of outputs to 8, and therefore the anonset would only *decrease* by 3. Sietch helps to keep the anonset larger. In general, when Alice only needs to spent 1 input, Sietch *increases* the anonset by 7 or 8, depending on if there is change.
+
+### What makes anonsets go up? HushChat
+
+Since HushChat memos are amount=0 by default, that means they have 1 shielded input and 8 shielded outputs on average, which means each HushChat memo increases the anonset size by 7. The use of HushChat directly increases the anonset of HUSH. Every HushChat memo helps create a larger anonset to protect all users.
