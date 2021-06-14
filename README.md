@@ -71,3 +71,10 @@ The anonset size at block height `H` can be defined
 anonset(H) = shielded_outputs(H) - shielded_inputs(H)
 ```
 
+where
+
+```
+shielded_outputs(H) = number of shielded outputs at height H
+shielded_inputs(H) = number of *spent* outputs, i.e. shielded transaction inputs at height H
+```
+
