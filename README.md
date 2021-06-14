@@ -12,9 +12,11 @@ To be more precise, if there are `N` people that Waldo is hiding amongst, there 
 
 Privacy coins based on CryptoNote Protocol, such as Monero and related forks, have anonymity sets that are *per transaction*. One transaction from Alice to Bob has it's own, it is not network-wide, such as in Zcash Protocol coins.
 
-Monero currently uses an anonset size of 11 for each transaction, known as *mixins*. Some Monero forks use larger values, but these are small numbers which are much smaller than Zcash Protocol coins. Currently as of June 2021, HUSH has an anonset of about 500,000, which protects every shielded transaction.
+Monero currently uses an anonset size of 11 for each transaction, known as *mixins*. Some Monero forks use larger values, but these are small numbers which are much smaller than network-wide anonsets in Zcash Protocol coins. Currently as of June 2021, HUSH has an anonset of about 500,000, which protects every shielded transaction.
 
 MimbleWimble Protocol coins have anonsets which are shared across an entire block, which can be considered strictly better than CryptoNote Protocol but not as beneficial as network-wide anonsets of Zcash Protocol. There is research that shows a malicious node can listen to network traffic and further degrate the anonset to individual transactions inside the block, but this data does not appear on a block explorer.
+
+In Zcash Protocol, via Zero Knowledge mathematics knowns as zk-SNARKs, each "shielded transaction" is protected by the entire networks anonset.
 
 # Zcash Protocol Anonsets
 
