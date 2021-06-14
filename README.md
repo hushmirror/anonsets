@@ -99,3 +99,5 @@ All transactions with more than two inputs reduce the anonset of Zcash (ZEC), Pi
 ### What makes anonsets go up? HushChat
 
 Since HushChat memos are amount=0 by default, that means they have 1 shielded input and 8 shielded outputs on average, which means each HushChat memo increases the anonset size by 7. The use of HushChat directly increases the anonset of HUSH. Every HushChat memo helps create a larger anonset to protect all users.
+
+HushChat is privacy technology with a rare property: The more it is used, the more it increases the privacy of the entire HUSH network, even people that do not use HushChat and only make financial transactions. This is an example of why we say Hush implements "Extreme Privacy".
