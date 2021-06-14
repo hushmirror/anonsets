@@ -86,3 +86,8 @@ Since anonset sizes can go up and down at every block, just because one coin has
 
 ### How do anonsets go down?
 
+Whenever there are more shielded inputs than shielded outputs, the anonset goes down in that transaction. One can add up all the transactions of a block and also determine if a certian block height *increases* or *decreases* the anonset size.
+
+Let's say Alice wants to send Bob 1 HUSH but all she has are 101 shielded outputs of amount 0.01, which add up to 1.01 HUSH. That gives her enough to send 1 HUSH to Bob and to pay the transaction fee of 0.0001 HUSH.
+
+Her shielded transaction will have 101 shielded inputs. On Zcash and Pirate coins, the transaction will have two outputs, and therefore *decrease* the anonset by 99. This can often happen when miners get many small regular payments from a mining pool, then they spend the funds.
