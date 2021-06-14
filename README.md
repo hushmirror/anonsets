@@ -90,7 +90,7 @@ Whenever there are more shielded inputs than shielded outputs, the anonset goes 
 
 Let's say Alice wants to send Bob 1 HUSH and she has 11 shielded outputs of amount 0.01, which add up to 1.1 HUSH. That gives her enough to send 1 HUSH to Bob and to pay the transaction fee of 0.0001 HUSH.
 
-Her shielded transaction will have 11 shielded inputs. On Zcash and Pirate coins, the transaction will have two outputs, and therefore *decrease* the anonset by 9. This can often happen when miners get many small regular payments from a mining pool, then they spend the funds.
+Her shielded transaction will have 11 shielded inputs. On Zcash and Pirate coins, the transaction will have two outputs, and therefore *decrease* the anonset by 9. This can often happen when miners get many small regular payments from a mining pool, then they spend the funds. It's possible to have hundreds and potentially up to about 1000 shielded inputs in a transaction. This means a single transaction can reduce the anonset size by up to 1000 and therefore a single block can drastically change the anonset size.
 
 If Alice used Hush, Sietch would increase the number of outputs to 8, and therefore the anonset would only *decrease* by 3. Sietch helps to keep the anonset larger. In general, when Alice only needs to spent 1 input, Sietch *increases* the anonset by 7 or 8, depending on if there is change.
 
