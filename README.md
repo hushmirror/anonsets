@@ -78,3 +78,11 @@ shielded_outputs(H) = number of shielded outputs at height H
 shielded_inputs(H) = number of *spent* outputs, i.e. shielded transaction inputs at height H
 ```
 
+### Does Coin X have a bigger anonset than Coin Y?
+
+This question doesn't quite make sense, because anonset is a function of block height. It can go up and down at different block heights. Does coin X at height `H1` have a larger anonset than coin Y at height `H2`? That is a well-formed question with a yes/no answer.
+
+Since anonset sizes can go up and down at every block, just because one coin has a larger anonset at a certain height, doesn't mean that will be true for the next block.
+
+### How do anonsets go down?
+
