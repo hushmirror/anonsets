@@ -26,11 +26,48 @@ Since Zcash Protocol has the largest anonsets which give the most privacy, and s
 
 We will need to define a few more terms to precisely talk about measuring and studying the anonset, AKA shielded pool size, in Zcash Protocol coins.
 
+### Transaction (tx)
+
+Alice sends Bob money via a transaction, which has one or more inputs and one or more outputs. If there is one Bob receiving funds, there is often at least two outputs, one for Bob and one where Alice receives her *change*.
+
 ### Input
+
+Money about to be spent from an address. Value coming into a transaction. Can be *transparent* or *shielded*.
+
 ### Output
+
+Value being received to an address, also called an Unspent Transaction Output (UTXO). Can be *transparent* or *shielded*.
+
 ### Coinbase
+
+The shady company stole it's name from this, which means newly mined funds, the block reward for mining a block. They are a special kind of input, one which has no history.
+
 ### Shielded Input
+
+Inputs being spent from a shieled address (zaddr) came into existence as the output of a shielded transaction, unspent, and then become *spent* by being used as the input of a future shielded transaction (ztx).
+
+Because it is shielded, the amount and address it's coming from does not appear in public blockchain data.
+
 ### Shielded Output
+
+Value being received to a shielded address (zaddr), where Alice spent her funds and Bob received newly *unspent* funds.
+
+Because it is shielded, the amount and address it's going to does not appear in public blockchain data.
+
 ### Transparent Input
+
+Inputs with no privacy, where both amount and addresses is public data that can be seen on an explorer.
+
 ### Transparent Output
+
+Outputs with no privacy.
+
+
+## Anonset Definition
+
+The anonset size at block height `H` can be defined
+
+```
+anonset(H) = shielded_outputs(H) - shielded_inputs(H)
+```
 
