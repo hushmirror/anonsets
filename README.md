@@ -101,3 +101,13 @@ All transactions with more than two inputs reduce the anonset of Zcash (ZEC), Pi
 Since HushChat memos are amount=0 by default, that means they have 1 shielded input and 8 shielded outputs on average, which means each HushChat memo increases the anonset size by 7. The use of HushChat directly increases the anonset of HUSH. Every HushChat memo helps create a larger anonset to protect all users.
 
 HushChat is privacy technology with a rare property: The more it is used, the more it increases the privacy of the entire HUSH network, even people that do not use HushChat and only make financial transactions. This is an example of why we say Hush implements "Extreme Privacy".
+
+## Anonset Velocity
+
+Anonset velocity is a count per time, which tells us how much the anonset is increasing or decreasing per time. This metric is actually more useful when comparing the anonsets of two different coins. The higher the anonset velocity, the faster that the anonset is increasing (or decreasing!) on that blockchain. Higher values are better because that adds more privacy per time. 
+
+```
+anonset_velocity(H) = anonset(H) / (seconds since genesis block)
+```
+
+Hush has the fastest growing anonset of any Zcash Protocol coin precisely because we have the largest anonset velocity. Sietch and HushChat and the entire internals of Hush being tuned for maximum privacy results in this behavior. ZEC internals were never optimized for a healthy or large anonset, which is why it is the oldest Zcash Protocol coin and yet has the smallest anonset. It's velocity is very small and often negative.
