@@ -1,6 +1,6 @@
 # Anonymity Sets Of Privacy Coins
 
-This repo contains a whitepaper about the Anonymity Sets of Privacy coins, in particular of Zcash Protocol coins, where they are specifically called Shieled Pools.
+This repo contains a whitepaper about the Anonymity Sets of Privacy coins, in particular of Zcash Protocol coins, where they are specifically called Shielded Pools.
 
 # Definition of Anonymity Set (anonset)
 
