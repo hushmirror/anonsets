@@ -2,6 +2,8 @@
 
 This repo contains a whitepaper about the Anonymity Sets of Privacy coins, in particular of Zcash Protocol coins, where they are often called Shielded Pools.
 
+This is a graph of the anonset size of HUSH v3 mainnet during it's first 567000 blocks.
+
 <img src=anonset.png>
 
 # Definition of Anonymity Set (anonset)
